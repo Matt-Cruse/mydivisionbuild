@@ -21,30 +21,32 @@ $brand-danger: red;
 $body-bg: $black;
 $text-color: #696969;
 
-$link-color: orange;
+$link-color: $orange;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 
 $font-size-base: 16px;
 
+$nav-link-hover-bg: #cc7800;
+
 /*NAV PILLS*/
 
 $nav-pills-border-radius: 0;
-$nav-pills-active-link-hover-bg: rgb(255,150,0);
-$nav-pills-active-link-hover-color: rgb(255,255,255);
+$nav-pills-active-link-hover-bg: $orange;
+$nav-pills-active-link-hover-color: $white;
 
 /*PANELS*/
 
 $panel-bg: transparent;
 $panel-body-padding: 0;
-$panel-heading-padding: 10px 15px;
+$panel-heading-padding: 1em;
 $panel-footer-padding: 0;
 $panel-border-radius: 0;
 
 $panel-default-text: $white;
 $panel-default-border: transparent;
 
-$panel-default-heading-bg: $black;
+$panel-default-heading-bg: rgba($black,0.35);
 
 $panel-primary-text: $white;
 $panel-primary-border: transparent;
@@ -55,10 +57,12 @@ $panel-primary-heading-bg: $orange;
 $btn-default-color: $orange;
 $btn-default-bg: $orange;
 
+$btn-primary-bg: $orange;
+
 /*JUMBOTRON*/
 
-$jumbotron-padding:              2rem;
-$jumbotron-color:                inherit;
-$jumbotron-bg:                   rgba($white,0.35);
-$jumbotron-heading-color:        $white;
-$jumbotron-font-size:            ceil(($font-size-base * 1.5));
+$jumbotron-padding: 2rem;
+$jumbotron-color: inherit;
+$jumbotron-bg: rgba($white,0.35);
+$jumbotron-heading-color: $white;
+$jumbotron-font-size: ceil(($font-size-base * 1.5));

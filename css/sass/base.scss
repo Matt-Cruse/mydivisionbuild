@@ -11,7 +11,47 @@ body
 	}
 }
 
-.jumbotron p
+.container, .container-fluid
 {
-	color: $white;
+	& .jumbotron
+	{
+		border-radius: 0;	
+		& h1
+		{
+			text-shadow: 1px 1px 0 rgba($black,0.5);
+		}
+		& p
+		{		
+			color: $white;
+			text-shadow: 1px 1px 0 rgba($black,0.5);
+		}
+	}
+}
+
+.side-nav
+{
+	& .logo-holder
+	{
+		margin-bottom: 1em;
+	}
+	& ul
+	{
+		& li
+		{
+			font-size: 2rem;
+			& a
+			{
+				text-shadow: 1px 1px 0 rgba($black,0.5);
+				&:hover
+				{
+					color: $white;					
+				}
+			}
+		}
+	}
+}
+
+.btn
+{
+	border-radius: 0;
 }
