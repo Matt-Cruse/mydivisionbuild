@@ -1,0 +1,64 @@
+// overrides here (do not use !default here)
+
+$relativePath: "../";
+
+$bgroundPath: $relativePath + "/images/bgrounds/";
+$iconPath: $relativePath + "/images/icons/";
+$logoPath: $relativePath + "/images/logos/";
+$elementPath: $relativePath + "/images/elements/";
+
+$black: rgb(0,0,0);
+$white: rgb(255,255,255);
+$orange: rgb(255,150,0);
+$turquoise: rgb(12,114,147);
+
+$brand-primary: darken(#428bca, 6.5%);
+$brand-success: #5cb85c;
+$brand-info: #5bc0de;
+$brand-warning: #f0ad4e;
+$brand-danger: red;
+
+$body-bg: $black;
+$text-color: #696969;
+
+$link-color: orange;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+$font-size-base: 16px;
+
+/*NAV PILLS*/
+
+$nav-pills-border-radius: 0;
+$nav-pills-active-link-hover-bg: rgb(255,150,0);
+$nav-pills-active-link-hover-color: rgb(255,255,255);
+
+/*PANELS*/
+
+$panel-bg: transparent;
+$panel-body-padding: 0;
+$panel-heading-padding: 10px 15px;
+$panel-footer-padding: 0;
+$panel-border-radius: 0;
+
+$panel-default-text: $white;
+$panel-default-border: transparent;
+
+$panel-default-heading-bg: $black;
+
+$panel-primary-text: $white;
+$panel-primary-border: transparent;
+$panel-primary-heading-bg: $orange;
+
+/*BUTTONS*/
+
+$btn-default-color: $orange;
+$btn-default-bg: $orange;
+
+/*JUMBOTRON*/
+
+$jumbotron-padding:              2rem;
+$jumbotron-color:                inherit;
+$jumbotron-bg:                   rgba($white,0.35);
+$jumbotron-heading-color:        $white;
+$jumbotron-font-size:            ceil(($font-size-base * 1.5));

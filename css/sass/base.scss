@@ -1,0 +1,17 @@
+@import "bootstrap";
+
+body
+{
+	margin: 1em;
+	background:
+	{
+		image: url($bgroundPath + "body_bg.jpg");
+		position: center top;
+		repeat: no-repeat;
+	}
+}
+
+.jumbotron p
+{
+	color: $white;
+}
