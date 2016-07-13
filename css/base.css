@@ -6810,7 +6810,11 @@ body {
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
+  height: auto;
+  max-height: 278px;
+  overflow-y: hidden;
   border-radius: 0;
+  transition: max-height 0.5s;
 }
 .container .jumbotron h1, .container-fluid .jumbotron h1 {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
@@ -6818,6 +6822,22 @@ body {
 .container .jumbotron p, .container-fluid .jumbotron p {
   color: white;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.container .toggle, .container-fluid .toggle {
+  position: absolute;
+  top: 1em;
+  right: 2em;
+}
+.container .toggle.off ~ .jumbotron, .container-fluid .toggle.off ~ .jumbotron {
+  max-height: 0;
+}
+.container .toggle.off ~ .jumbotron:before, .container-fluid .toggle.off ~ .jumbotron:before {
+  content: "My Builds";
+  position: absolute;
+  top: 0.5em;
+  left: 2em;
+  font-size: 30px;
+  color: white;
 }
 
 .side-nav .logo-holder {
@@ -6835,6 +6855,34 @@ body {
 
 .btn {
   border-radius: 0;
+}
+
+.build-nav {
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.build-nav > div {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.build-nav > div input[type=radio] {
+  display: none;
+}
+.build-nav > div input[type=radio]:checked ~ div.build-details {
+  max-height: 1000px;
+  transition: max-height 1.5s;
+}
+.build-nav > div label {
+  width: 33.3%;
+}
+.build-nav > div .build-details {
+  height: auto;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: max-height 0.5s;
 }
 
 /*# sourceMappingURL=base.css.map */
